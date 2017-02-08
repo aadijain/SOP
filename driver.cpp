@@ -3,6 +3,11 @@
 int main(int argc ,char *argv[])
 {
     Predictor p;
-    p.draw();  
+    while(true)
+    {
+        p.draw();
+        p.update();
+        cv::waitKey(100);
+    }
     return 0;
 }

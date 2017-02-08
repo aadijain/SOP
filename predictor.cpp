@@ -1,11 +1,11 @@
 #include "predictor.hpp"
 
+int Predictor::NP = 3;
+
 void Predictor::getRawData()
 {
-    Parser pr;
     input_data = pr.getDataFromFile();
 }
-
 Predictor::Predictor()
 {
     getRawData();
@@ -13,7 +13,13 @@ Predictor::Predictor()
 
 void Predictor::draw()
 {
-    Drawer dr;
-    dr.displayPoints(input_data);
-    dr.displayFeatures(pred_data);
+    //dr.displayPoints(input_data);
+    //dr.displayFeatures(pred_data);
+    dr.displaySlider();
+    dr.wait();
+}
+void Predictor::update()
+{
+    NP = dr.NP;
+    printf("NP: %d\n",NP);
 }

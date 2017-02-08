@@ -2,6 +2,7 @@
 #define COMMONDEFS_H
 
 #define PI 3.1415
+#define TIMESTEP 20
 
 struct Point {
     double r;
