@@ -14,7 +14,7 @@ class Drawer
 {
     private:
     public:
-        int NP;
+        static int NP,D0;
         void displayPoints(vector<Point> v);
         void displayFeatures(vector<Point> v);
         void displaySlider();

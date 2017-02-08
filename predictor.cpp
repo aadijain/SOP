@@ -1,6 +1,7 @@
 #include "predictor.hpp"
 
-int Predictor::NP = 3;
+int Predictor::NP;
+int Predictor::D0;
 
 void Predictor::getRawData()
 {
@@ -21,5 +22,7 @@ void Predictor::draw()
 void Predictor::update()
 {
     NP = dr.NP;
+    D0 = dr.D0;
     printf("NP: %d\n",NP);
+    printf("D0: %d\n",D0);
 }

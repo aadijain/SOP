@@ -1,12 +1,13 @@
 #include "drawer.hpp"
 
-int n_slider;
-// const int n_max=10;
+int Drawer::NP = 3;
+int Drawer::D0 = 50;
 
 void Drawer::ifMoved(int v,void* data)
 {
     Drawer *d = (Drawer*)data;
-    d->NP = v;
+    d->NP = Drawer::NP;
+    d->D0 = Drawer::D0;
     printf("v: %d\n",v);
 }
 void Drawer::displayPoints(vector<Point> v)
@@ -24,7 +25,8 @@ void Drawer::displayFeatures(vector<Point> v)
 void Drawer::displaySlider()
 {
     cv::namedWindow("Window",1);
-    cv::createTrackbar( "n Slider", "Window", &n_slider, 10,Drawer::ifMoved,this);
+    cv::createTrackbar( "NP:", "Window", &Drawer::NP, 10,Drawer::ifMoved,this);
+    cv::createTrackbar( "D0", "Window", &Drawer::D0, 100,Drawer::ifMoved,this);
 }
 void Drawer::wait()
 {

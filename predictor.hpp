@@ -10,7 +10,7 @@
 #include "drawer.hpp"
 #include "parser.hpp"
 // #define NP 3
-#define D0 50
+// #define D0 50
 #define RMAX 100
 #define NORM 1
 
@@ -31,6 +31,7 @@ class Predictor {
 
     public:
         static int NP;
+        static int D0;
         void draw();
         void update();
         // void draw(int index);
