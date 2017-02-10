@@ -17,3 +17,4 @@ driver.o: driver.cpp predictor.hpp
 clean:
 	@rm -f *.o
 	@rm -f exec
+	@rm -f *~

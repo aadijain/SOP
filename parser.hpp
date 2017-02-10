@@ -3,12 +3,13 @@
 #include "commondefs.hpp"
 #include <stdio.h>
 #include <vector>
-
+#include <math.h>
 using namespace std;
 
 class Parser
 {
     public:
-        vector<Point> getDataFromFile();
+        vector<Point> getInputFromFile();
+        vector<Feature> getSampleFeatures();
 };
 #endif

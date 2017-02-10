@@ -5,9 +5,9 @@ int main(int argc ,char *argv[])
     Predictor p;
     while(true)
     {
+        // p.getRawData();
         p.draw();
         p.update();
-        cv::waitKey(100);
     }
     return 0;
 }

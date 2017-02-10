@@ -2,30 +2,28 @@
 #define COMMONDEFS_H
 
 #define PI 3.1415
-#define TIMESTEP 20
+#define TIMESTEP 200
 
 struct Point {
-    double r;
-    double theta;
+    double x,y;
     bool breakpoint;
 };
 struct Line {
-    double alpha;
-    double p;
+    Point a,b;
 };
 struct Circle {
+    Point center;
     double radius;
-    double x,y;
 };
 
 enum type { POINT, LINE, CIRCLE };
-
+union obj {
+    Circle c;
+    Point p;
+    Line l;
+};
 struct Feature {
     type ftype;
-    union obj {
-        Circle c;
-        Point p;
-        Line l;
-    };
+    obj fobj;
 };
 #endif

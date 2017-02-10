@@ -9,8 +9,7 @@
 #include "commondefs.hpp"
 #include "drawer.hpp"
 #include "parser.hpp"
-// #define NP 3
-// #define D0 50
+
 #define RMAX 100
 #define NORM 1
 
@@ -23,7 +22,6 @@ class Predictor {
         vector<Feature> features;
         Parser pr;
         Drawer dr;
-        void getRawData();
         // Line getPredLine(int index);
         // Line getPredRay(int index);
         // Point getpredPoint(int index);
@@ -34,6 +32,7 @@ class Predictor {
         static int D0;
         void draw();
         void update();
+        void getRawData();
         // void draw(int index);
         // void extractFeatures();
         // void getStats();//print variance, covariance, falspositives, etc
