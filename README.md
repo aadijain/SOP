@@ -1,5 +1,5 @@
 # SOP
-sample code for 2011 Paper:
+sample code for feature-extraction based on Algorithm described in the 2011 Paper:
 
 Prediction-based geometric feature extraction for 2D laser scanner
 Yilu Zhao, Xiong Chen ∗

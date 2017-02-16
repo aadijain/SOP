@@ -9,18 +9,20 @@ struct Point {
     bool breakpoint;
 };
 struct Line {
+    double p,alpha;
+};
+struct LineSegment {
     Point a,b;
 };
 struct Circle {
     Point center;
     double radius;
 };
-
 enum type { POINT, LINE, CIRCLE };
 union obj {
     Circle c;
     Point p;
-    Line l;
+    LineSegment l;
 };
 struct Feature {
     type ftype;

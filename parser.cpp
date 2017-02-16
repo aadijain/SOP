@@ -25,7 +25,7 @@ vector<Feature> Parser::getSampleFeatures()
     vector<Feature> v;
     Point a,b,c,d,e;
     Circle c1,c2;
-    Line l1,l2;
+    LineSegment l1,l2;
     Feature f1,f2,f3,f4,f5,f6,f7;
     a.x = 0;     a.y = 0;
     b.x = 10;    b.y = 10;

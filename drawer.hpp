@@ -18,12 +18,13 @@ class Drawer
     private:
         cv::Mat image;
     public:
-        static int NP,D0;
+        static int NP,D0,INDEX;
         Drawer();
         void displayPoints(vector<Point> v);
         void displayFeatures(vector<Feature> v);
+        void displayMetaData(Line l1, Line l2, Point p, double th);
         void displaySlider();
         void wait();
-        // static void ifMoved(int v,void* data);
+        static void ifMoved(int v,void* data);
 };
 #endif

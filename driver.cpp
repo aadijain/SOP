@@ -6,8 +6,8 @@ int main(int argc ,char *argv[])
     while(true)
     {
         // p.getRawData();
-        p.draw();
         p.update();
+        p.draw();
     }
     return 0;
 }

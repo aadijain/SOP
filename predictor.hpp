@@ -22,10 +22,10 @@ class Predictor {
         vector<Feature> features;
         Parser pr;
         Drawer dr;
-        // Line getPredLine(int index);
-        // Line getPredRay(int index);
-        // Point getpredPoint(int index);
-        // double predThreshold(int index);
+        Line getPredLine(int index);
+        Line getPredRay(int index);
+        Point getPredPoint(int index);
+        double predThreshold(int index);
 
     public:
         static int NP;
@@ -33,7 +33,6 @@ class Predictor {
         void draw();
         void update();
         void getRawData();
-        // void draw(int index);
         // void extractFeatures();
         // void getStats();//print variance, covariance, falspositives, etc
         Predictor();
