@@ -9,7 +9,8 @@ using namespace std;
 class Parser
 {
     public:
-        vector<Point> getInputFromFile();
+        vector<Point> getPolarInput();
+        vector<Point> getCartesianInput();
         vector<Feature> getSampleFeatures();
 };
 #endif

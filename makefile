@@ -10,7 +10,7 @@ parser.o: commondefs.hpp parser.cpp parser.hpp
 predictor.hpp: commondefs.hpp drawer.hpp parser.hpp
 
 predictor.o: predictor.cpp predictor.hpp
-	g++ -c predictor.cpp
+	g++ -c -std=c++11 predictor.cpp
 
 driver.o: driver.cpp predictor.hpp
 		g++ -c driver.cpp

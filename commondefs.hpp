@@ -6,7 +6,6 @@
 
 struct Point {
     double x,y;
-    bool breakpoint;
 };
 struct Line {
     double p,alpha;
@@ -18,6 +17,12 @@ struct Circle {
     Point center;
     double radius;
 };
+struct MetaData{
+    Line l1,l2;
+    Point p;
+    double th;
+    bool breakpoint;
+};
 enum type { POINT, LINE, CIRCLE };
 union obj {
     Circle c;
@@ -27,5 +32,6 @@ union obj {
 struct Feature {
     type ftype;
     obj fobj;
+    int len;
 };
 #endif

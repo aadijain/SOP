@@ -2,11 +2,11 @@
 
 int main(int argc ,char *argv[])
 {
-    Predictor p;
     while(true)
     {
-        // p.getRawData();
+        Predictor p;
         p.update();
+        p.predict();
         p.draw();
     }
     return 0;
