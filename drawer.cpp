@@ -2,6 +2,7 @@
 
 int Drawer::NP = 3;
 int Drawer::D0 = 10;
+int Drawer::QTH= 0;
 int Drawer::INDEX = 0;
 
 // void Drawer::ifMoved(int v,void* data)
@@ -76,7 +77,8 @@ void Drawer::displaySlider()
     // cv::createTrackbar( "NP:", "Window", &Drawer::NP, 10,Drawer::ifMoved,this);
     // cv::createTrackbar( "D0:", "Window", &Drawer::D0, 100,Drawer::ifMoved,this);
     cv::createTrackbar( "NP:", "Window", &Drawer::NP, 10);
-    cv::createTrackbar( "D0:", "Window", &Drawer::D0, 100);
+    cv::createTrackbar( "3.D0:", "Window", &Drawer::D0, 100);
+    cv::createTrackbar( "2.QTH:", "Window", &Drawer::QTH, 30);
     cv::createTrackbar( "INDEX:", "Window", &Drawer::INDEX, 40);
 }
 void Drawer::wait()

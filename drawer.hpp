@@ -21,7 +21,7 @@ class Drawer
     private:
         cv::Mat image;
     public:
-        static int NP,D0,INDEX;
+        static int NP,D0,INDEX,QTH;
         Drawer();
         void displayPoints(vector<Point> v, vector<MetaData> d);
         void displayFeatures(vector<Feature> v);

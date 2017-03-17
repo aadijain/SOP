@@ -7,6 +7,7 @@ int main(int argc ,char *argv[])
         Predictor p;
         p.update();
         p.predict();
+        p.extractFeatures();
         p.draw();
     }
     return 0;
